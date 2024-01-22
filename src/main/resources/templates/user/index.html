@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+
+</head>
+<body>
+<h3 th:text=" 'Welcome, +${user.Username}+ '!'"></h3>
+<a th:href="@{/}">Select your sps services here!</a>
+<h2>Users</h2>
+<th:block th:each="someUser : ${users}">
+    <p th:text="${someUser.username}"></p>
+</th:block>
+</body>
+
+</html>
