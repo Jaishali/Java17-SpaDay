@@ -9,9 +9,9 @@ import java.util.Map;
 public class UserData {
     private static final Map<Integer, User> users = new HashMap<>();
 
-    public static void add(User user){
+  /*  public static void add(User user){
         users.put(user.getId(),user);
-    }
+    }*/
     public static User getById(int id){
 
         return users.get(id);
