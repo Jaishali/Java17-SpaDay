@@ -77,7 +77,7 @@ public class User {
         checkPassword();
     }
     private void checkPassword(){
-        if(password = null && verifyPassword = null && !password.equals(verifyPassword)){
+        if(password == null && verifyPassword == null && !password.equals(verifyPassword)){
             setVerifyPassword(null);
         }
 
